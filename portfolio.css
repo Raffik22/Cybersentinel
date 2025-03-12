@@ -1,0 +1,191 @@
+/* Déclaration des couleurs principales */
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: rgba(255, 255, 255, 0.816);
+    --main-color: #00ffee;
+}
+
+/* Reset des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif; /* Application de la police Poppins */
+}
+
+/* Section Portfolio */
+.portfolio {
+    padding: 100px 20px;
+    background-color: var(--second-bg-color); /* Utilisation de la couleur secondaire */
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 3em;
+    color: var(--text-color); /* Texte en couleur claire */
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif; /* Police Poppins */
+}
+
+.portfolio .portfolio-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-item {
+    background-color: rgb(222, 222, 222);
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5em;
+    color: var(--bg-color); /* Couleur de texte principale */
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfolio-item p {
+    font-size: 1em;
+    color: black;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.portfolio-item .btn {
+    display: inline-block;
+    background-color: var(--main-color); /* Utilisation de la couleur principale */
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-item .btn:hover {
+    background-color: #00c7cc; /* Une teinte plus foncée de la couleur principale */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--bg-color); /* Fond sombre */
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color); /* Assure-toi que le fond de la page est bien noir */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio {
+    flex: 1; /* Pour pousser le footer en bas */
+}
+
+footer {
+    margin-top: auto;
+}
+/* Section CV */
+.CV-section {
+    padding: 100px 20px;
+    background-color: var(--second-bg-color);
+    text-align: center;
+}
+
+.CV-section h2 {
+    font-size: 3em;
+    color: var(--text-color);
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.CV-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.CV-item {
+    background-color:  rgb(222, 222, 222);
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    padding: 20px;
+}
+
+.CV-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.CV-item h3 {
+    font-size: 1.5em;
+    color: var(--bg-color);
+    margin-top: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.CV-item p {
+    font-size: 1em;
+    color: black;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Bouton de téléchargement */
+.CV-item .btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.CV-item .btn:hover {
+    background-color: #00c7cc;
+}
+
+
